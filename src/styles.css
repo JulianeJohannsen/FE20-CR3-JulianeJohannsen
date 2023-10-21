@@ -1,1 +1,49 @@
 /* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h1 {
+    font-family: 'Great Vibes', cursive;
+    font-size: 36pt;
+}
+
+/* home and about page */
+.hero {
+    width: 100%;
+    height: 60vh;
+}
+
+.heroImg {
+    width: 100%;
+    height: 60vh;
+    object-fit: cover;
+    position: relative;
+}
+
+.heroText {
+    width: 100%;
+    top: 30vh;
+    position: absolute;
+    text-align: center;
+    color: white;
+}
+
+.kitchenImg {
+    width: 30%;
+    height: 70vh;
+}
+
+.kitchenImg Img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.kitchenArticle {
+    width: 50%;
+}

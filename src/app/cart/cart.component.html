@@ -1,0 +1,49 @@
+<div class="container mt-5">
+    <div class="d-flex flex-wrap align-items-start justify-content-around">
+        <div id="cartItems">
+            <div class="item" *ngFor="let dish of dishes; index as index">
+            <table class="table">
+                <tr>
+                    <td><img src="{{ dish.image }}" class="" alt="Product image"></td>
+                    <td colspan="2">
+                        <h5 class="">{{ dish.name }}</h5>
+                        <p class="">{{ dish.ingredients }}</p>
+                        <p class="">{{ dish.price.toFixed(2) }}</p>  
+                    </td>
+                    <td class="text-center">
+                        <button class="btn btn-sm btn-warning" (click)="decrease(dish, index)">-</button> 
+                        <span> {{ dish.qtty }} </span>
+                        <button class="btn btn-sm btn-success" (click)="increase(dish)">+</button>  
+                        <br>
+                        <br>
+                        <button class="btn btn-danger" (click)="removeItem(index)">Delete</button> 
+                    </td>
+                </tr>
+            </table>
+            <hr>
+            </div>
+        </div>           
+        
+        <div id="total" class=""></div>  
+    </div>
+    <div class="mt-5">
+        <h1>Order form</h1>
+        <p>Please fill up the info for the delivery</p>
+        <hr>
+        <form [formGroup]="orderForm" (ngSubmit)="onSubmit()">
+            <div class="mb-3">
+                <label for="name" class="form-label">Name:</label>               
+                <input id="name" class="form-control" type="text" formControlName="name">               
+            </div>
+            <div class="mb-3">
+                <label for="address" class="form-label">Address:</label>               
+                <input id="address" class="form-control" type="text" formControlName="address">
+            </div>
+            <div class="mb-3">
+                <label for="phone" class="form-label">Phone:</label>               
+                <input id="phone" class="form-control" type="number" formControlName="phone">               
+            </div>
+            <button class="btn btn-success" type="submit">Purchase</button>
+        </form>
+    </div>
+</div>
