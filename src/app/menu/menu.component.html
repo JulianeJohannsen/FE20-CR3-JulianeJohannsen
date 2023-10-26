@@ -1,3 +1,4 @@
+<!-- loop for displaying products.ts as menu -->
 <div class="container mt-5 maincontent">
     <h1 class="text-center mb-4">Menu</h1>
     <div class="row row-cols-xl-4 row-cols-lg-3 row-cols-md-2 row-cols-sm-1 row-cols-xs-1 footerwrap">
@@ -12,7 +13,9 @@
                 <div *ngIf="product.availability == false" class="text-danger">This product is currently not available.
                 </div>
                 <div *ngIf="product.availability == true" class="d-flex justify-content-between align-items-center">
+                    <!-- renders menu-details.component for each product on click -->
                     <button routerLink="/details/{{ index }}" class="btn btn-primary">Details</button>
+                    <!-- adds product to cart -->
                     <button class="btn btn-success" (click)="addToCart(product)">Order</button>
                 </div>                
             </div>

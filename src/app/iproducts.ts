@@ -1,3 +1,4 @@
+// independent interface for defining types of products.ts, gets implemented by components
 export interface Iproducts {
         image: string;
         name: string;

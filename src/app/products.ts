@@ -1,3 +1,4 @@
+// independent object const, gets implemented by components, types defined by interface iproducts.ts
 export const products = [{
     image: "../assets/images/antipasti_mare.jpg",
     name: "Antipasti di mare",

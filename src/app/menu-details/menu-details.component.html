@@ -1,3 +1,4 @@
+<!-- shows details of one product, gets displayed after clicking on details in menu -->
 <div class="container mt-5" id="cardContainer">
     <div class="d-flex flex-column align-items-center">
         <h1 class="text-center mb-4">{{ product.name }}</h1>
@@ -11,7 +12,9 @@
                 <p class="card-text">{{ product.price.toFixed(2) }} €</p>
                 <hr>
                 <div class="d-flex justify-content-between align-items-center">
+                    <!-- links back to menu -->
                     <button routerLink="/menu" class="btn btn-primary">Back to Menu</button>
+                    <!-- adds product to cart -->
                     <button class="btn btn-success" (click)="addToCart(product)">Order</button>
                 </div>                
             </div>

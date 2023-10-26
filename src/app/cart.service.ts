@@ -1,3 +1,4 @@
+// independent ts for cart functions, gets implemented by cart.component, menu.component, menu-details.component
 import { Injectable } from '@angular/core';
 import { Iproducts } from './iproducts';
 import Swal from 'sweetalert2'
