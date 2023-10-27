@@ -19,7 +19,7 @@ export class CartService {
   }
   Swal.fire({
     position: 'center',
-    imageUrl: '../assets/images/add_cart.png',
+    imageUrl: './assets/images/add_cart.png',
     imageWidth: 360,
     imageHeight: 409,
     title: 'Your product is in the cart',

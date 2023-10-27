@@ -58,7 +58,7 @@ export class CartComponent implements OnInit {
     if(producttotal == 0){
       Swal.fire({
         position: 'center',
-        imageUrl: '../assets/images/add_cart.png',
+        imageUrl: './assets/images/add_cart.png',
         imageWidth: 360,
         imageHeight: 409,
         title: 'Your cart is empty',
@@ -126,7 +126,7 @@ export class CartComponent implements OnInit {
       console.warn(this.orderForm.value);
       Swal.fire({
         position: 'center',
-        imageUrl: '../assets/images/cart_success.jpg',
+        imageUrl: './assets/images/cart_success.jpg',
         imageWidth: 410,
         imageHeight: 308,
         title: 'We got your order',
