@@ -1,3 +1,10 @@
 .chooseText {
     width: 20%;
 }
+
+@media screen and (max-width: 720px) {
+    .chooseText {
+        width: 90%;
+    }
+    
+}

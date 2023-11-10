@@ -33,17 +33,29 @@ h1 {
     color: white;
 }
 
-.kitchenImg {
+.articleImg {
     width: 30%;
     height: 70vh;
 }
 
-.kitchenImg Img {
+.articleImg Img {
     width: 100%;
     height: 100%;
     object-fit: cover;
 }
 
-.kitchenArticle {
+.article {
     width: 50%;
+}
+
+@media screen and (max-width: 720px) {
+    .article {
+        width: 90%;
+    }
+
+    .articleImg {
+        width: 90%;
+        margin-bottom: 4%;
+    }
+    
 }

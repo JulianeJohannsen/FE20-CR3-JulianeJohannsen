@@ -11,12 +11,17 @@
                         <p class="">{{ dish.price.toFixed(2) }}</p>  
                     </td>
                     <td class="text-center">
-                        <button class="btn btn-sm btn-warning" (click)="decrease(dish, index)">-</button> 
-                        <span> {{ dish.qtty }} </span>
-                        <button class="btn btn-sm btn-success" (click)="increase(dish)">+</button>  
-                        <br>
-                        <br>
-                        <button class="btn btn-danger" (click)="removeItem(index)">Delete</button> 
+                        <div>
+                            <button class="btn btn-sm btn-outline-warning" (click)="decrease(dish, index)">-</button> 
+                            <span> {{ dish.qtty }} </span>
+                            <button class="btn btn-sm btn-outline-success" (click)="increase(dish)">+</button> 
+                        </div>
+                        <div>
+                            <button class="btn btn-outline-danger" (click)="removeItem(index)">Delete</button> 
+                        </div>                         
+                        <!-- <br>
+                        <br> -->
+                        
                     </td>
                 </tr>
             </table>
@@ -26,7 +31,7 @@
         
         <div id="total" class=""></div>  
     </div>
-    <div class="mt-5">
+    <div class="mt-5 mb-4">
         <h1>Order form</h1>
         <p>Please fill up the info for the delivery</p>
         <hr>
